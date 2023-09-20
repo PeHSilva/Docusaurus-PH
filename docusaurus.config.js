@@ -1,7 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+// eslint-disable-next-line no-undef
 const lightCodeTheme = require('prism-react-renderer/themes/github');
+// eslint-disable-next-line no-undef
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
@@ -18,8 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'PeHSilva', // Usually your GitHub org/user name.
+  projectName: 'Docusaurus-PH', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -38,20 +40,14 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          // eslint-disable-next-line no-undef
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
+          // eslint-disable-next-line no-undef
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
@@ -61,8 +57,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'My Série List',
         logo: {
@@ -76,9 +70,13 @@ const config = {
             position: 'left',
             label: 'Lista',
           },
-          {to: '/blog', label: 'Séries', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: '/quem-somos/quem-somos',
+            position: 'left',
+            label: 'Quem Somos',
+          },
+          {
+            href: 'https://github.com/PeHSilva/Docusaurus-PH.git',
             label: 'GitHub',
             position: 'right',
           },
@@ -88,46 +86,34 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentação',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Portfólio',
+                to: '/docs/category/1º-bimestre',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Equipe',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Quem somos',
+                to: '/quem-somos/quem-somos',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Mais',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/PeHSilva/Docusaurus-PH.git',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Série List, Inc. Site construido com Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -136,4 +122,5 @@ const config = {
     }),
 };
 
+// eslint-disable-next-line no-undef
 module.exports = config;
