@@ -32,5 +32,13 @@ sidebar_position: 1
     <td>8</td>
     <td>7/10</td>
   </tr>
+<tr>
+    <td>2</td>
+    <td>
+      <img src="/img/vks.jpg" alt="some text" with="100" height="209"/>
+    </td>
+    <td>Vikings</td>
+    <td>8</td>
+    <td>3/10</td>
+  </tr>
 </table>
-
